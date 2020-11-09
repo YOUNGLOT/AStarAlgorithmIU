@@ -1,3 +1,5 @@
+package usinigQueue;
+
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.PriorityQueue;
@@ -126,7 +128,7 @@ public class AStarAlgorithm {
     public void solve() {
         //  Queue에 처리 할 값이 있고, 결과값이 없을 때 : 반복
         while (PRIORITY_QUEUE.size() != 0 && resultKey.length() == 1) {
-            //  Data 를 Peek!!!!
+            //  usinigQueue.Data 를 Peek!!!!
             Data data = PRIORITY_QUEUE.peek();
             PRIORITY_QUEUE.remove(data);
 

@@ -1,3 +1,5 @@
+package usinigQueue;
+
 public class Data {
     private String key;
     private int[][] array;
