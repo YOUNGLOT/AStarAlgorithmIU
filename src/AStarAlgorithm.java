@@ -38,7 +38,9 @@ public class AStarAlgorithm {
                 resultArray = offeredArray;
             }
 
-            int score = (offeredPriorityScore + offeredKey.length() / 3) - (queuePriorityScore2 + queueKey.length() / 3);
+            //  임의로 휴리스틱 가중치를 조정 해 봤습니다.
+            //int score = (offeredPriorityScore + offeredKey.length() / 3) - (queuePriorityScore2 + queueKey.length() / 3);
+            int score = (offeredPriorityScore + offeredKey.length()) - (queuePriorityScore2 + queueKey.length());
             //  2증 삼항 연산자 사용해 봤습니다.
             return (score == 0) ? 0 : (score > 0) ? 1 : -1;
         }
